@@ -2,29 +2,29 @@
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
 	<Catalog uuid="a5b2f4b7-bbc3-4cf1-98c9-2728bea74210">
 		<InternalInfo>
-			<xr:GeneratedType name="CatalogObject.auth_g_СервисныеПользователи" category="Object">
+			<xr:GeneratedType name="CatalogObject.google_auth_СервисныеПользователи" category="Object">
 				<xr:TypeId>10deec2a-c4e9-46cf-afcd-0461723a6ba9</xr:TypeId>
 				<xr:ValueId>5076d5f5-7f43-4522-806d-2ba50d29a92f</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogRef.auth_g_СервисныеПользователи" category="Ref">
+			<xr:GeneratedType name="CatalogRef.google_auth_СервисныеПользователи" category="Ref">
 				<xr:TypeId>e41bc31a-9219-4934-abb2-d06c0a06a48d</xr:TypeId>
 				<xr:ValueId>f2df7219-405d-49ce-bd43-188cbc398f2b</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogSelection.auth_g_СервисныеПользователи" category="Selection">
+			<xr:GeneratedType name="CatalogSelection.google_auth_СервисныеПользователи" category="Selection">
 				<xr:TypeId>5e2a0de5-20ac-4be7-a933-d820b23bec9c</xr:TypeId>
 				<xr:ValueId>57a7eefd-03ea-4a8c-9cfd-2b8e7a05b101</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogList.auth_g_СервисныеПользователи" category="List">
+			<xr:GeneratedType name="CatalogList.google_auth_СервисныеПользователи" category="List">
 				<xr:TypeId>4481b5e2-80d6-48fb-aecb-c7b0052cb855</xr:TypeId>
 				<xr:ValueId>02cbb8cc-57ff-4f63-a5a9-e5d6084de836</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogManager.auth_g_СервисныеПользователи" category="Manager">
+			<xr:GeneratedType name="CatalogManager.google_auth_СервисныеПользователи" category="Manager">
 				<xr:TypeId>f4145aa7-4f14-416a-8e58-679b2dd7a077</xr:TypeId>
 				<xr:ValueId>defc00e8-d3ac-4159-8922-c196622f875d</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>auth_g_СервисныеПользователи</Name>
+			<Name>google_auth_СервисныеПользователи</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -54,14 +54,14 @@
 			<QuickChoice>false</QuickChoice>
 			<ChoiceMode>BothWays</ChoiceMode>
 			<InputByString>
-				<xr:Field>Catalog.auth_g_СервисныеПользователи.StandardAttribute.Code</xr:Field>
+				<xr:Field>Catalog.google_auth_СервисныеПользователи.StandardAttribute.Code</xr:Field>
 			</InputByString>
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
-			<DefaultObjectForm>Catalog.auth_g_СервисныеПользователи.Form.ФормаЭлемента</DefaultObjectForm>
+			<DefaultObjectForm>Catalog.google_auth_СервисныеПользователи.Form.ФормаЭлемента</DefaultObjectForm>
 			<DefaultFolderForm/>
-			<DefaultListForm>Catalog.auth_g_СервисныеПользователи.Form.ФормаСписка</DefaultListForm>
+			<DefaultListForm>Catalog.google_auth_СервисныеПользователи.Form.ФормаСписка</DefaultListForm>
 			<DefaultChoiceForm/>
 			<DefaultFolderChoiceForm/>
 			<AuxiliaryObjectForm/>
@@ -352,11 +352,11 @@
 			</Attribute>
 			<TabularSection uuid="16c7d570-0d2e-4b63-9100-8405cada92d8">
 				<InternalInfo>
-					<xr:GeneratedType name="CatalogTabularSection.auth_g_СервисныеПользователи.ПраваДоступа" category="TabularSection">
+					<xr:GeneratedType name="CatalogTabularSection.google_auth_СервисныеПользователи.ПраваДоступа" category="TabularSection">
 						<xr:TypeId>a6d0cd31-f0e8-4f8f-81b9-0a1599e185a7</xr:TypeId>
 						<xr:ValueId>d42fe33c-a9cc-4ec8-8aeb-d77981475ec0</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="CatalogTabularSectionRow.auth_g_СервисныеПользователи.ПраваДоступа" category="TabularSectionRow">
+					<xr:GeneratedType name="CatalogTabularSectionRow.google_auth_СервисныеПользователи.ПраваДоступа" category="TabularSectionRow">
 						<xr:TypeId>089444cc-662c-42e0-851d-4ab70228ae76</xr:TypeId>
 						<xr:ValueId>b8fe042c-4988-408a-80f1-5304287b766a</xr:ValueId>
 					</xr:GeneratedType>

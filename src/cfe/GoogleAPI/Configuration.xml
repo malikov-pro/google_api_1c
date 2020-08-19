@@ -65,13 +65,14 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
-			<Subsystem>Администрирование</Subsystem>
+			<Subsystem>Google_API</Subsystem>
+			<CommonPicture>google_icon_16_16</CommonPicture>
 			<Role>google_ОсновнаяРоль</Role>
-			<CommonModule>auth_g_Сервер</CommonModule>
-			<CommonModule>auth_g_РаботаСоСтроками</CommonModule>
+			<CommonModule>google_auth_Сервер</CommonModule>
+			<CommonModule>google_РаботаСоСтроками</CommonModule>
 			<CommonModule>КоннекторHTTP</CommonModule>
-			<Catalog>auth_g_СервисныеПользователи</Catalog>
-			<InformationRegister>auth_g_Токены</InformationRegister>
+			<Catalog>google_auth_СервисныеПользователи</Catalog>
+			<InformationRegister>google_auth_Токены</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

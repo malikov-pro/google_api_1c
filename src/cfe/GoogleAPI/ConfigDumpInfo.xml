@@ -1,35 +1,38 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.10">
 	<ConfigVersions>
-		<Metadata name="Catalog.auth_g_СервисныеПользователи" id="a5b2f4b7-bbc3-4cf1-98c9-2728bea74210" configVersion="5bb5b0444c75bb04fb7eeb71f2d5a6d3c2a17386">
-			<Metadata name="Catalog.auth_g_СервисныеПользователи.TabularSection.ПраваДоступа" id="16c7d570-0d2e-4b63-9100-8405cada92d8"/>
-			<Metadata name="Catalog.auth_g_СервисныеПользователи.Attribute.КлючПодписи_XML" id="37a8c2cd-5d14-4ffa-9dbd-7685f5115e1a"/>
-			<Metadata name="Catalog.auth_g_СервисныеПользователи.Attribute.client_email" id="47a19317-5100-45fb-b820-54dbd34b4685"/>
-			<Metadata name="Catalog.auth_g_СервисныеПользователи.TabularSection.ПраваДоступа.Attribute.ПравоДоступа" id="84dab77b-f9c9-4052-ba93-11f2139abbad"/>
-			<Metadata name="Catalog.auth_g_СервисныеПользователи.Attribute.private_key" id="8a929bb3-d9c7-4653-bfe5-e94a900832db"/>
-			<Metadata name="Catalog.auth_g_СервисныеПользователи.Attribute.project_id" id="9b3c03fc-17bd-4ea6-8182-4ec8303ee392"/>
-			<Metadata name="Catalog.auth_g_СервисныеПользователи.Attribute.private_key_id" id="bce495ff-504c-4b54-a77d-d512c7a2a860"/>
-			<Metadata name="Catalog.auth_g_СервисныеПользователи.Attribute.public_key" id="f7b69c77-92b2-43e4-9288-3e525223c242"/>
+		<Metadata name="Catalog.google_auth_СервисныеПользователи" id="a5b2f4b7-bbc3-4cf1-98c9-2728bea74210" configVersion="83d5d321531c867219e41dc7ca941a995aa9dc7e">
+			<Metadata name="Catalog.google_auth_СервисныеПользователи.TabularSection.ПраваДоступа" id="16c7d570-0d2e-4b63-9100-8405cada92d8"/>
+			<Metadata name="Catalog.google_auth_СервисныеПользователи.Attribute.КлючПодписи_XML" id="37a8c2cd-5d14-4ffa-9dbd-7685f5115e1a"/>
+			<Metadata name="Catalog.google_auth_СервисныеПользователи.Attribute.client_email" id="47a19317-5100-45fb-b820-54dbd34b4685"/>
+			<Metadata name="Catalog.google_auth_СервисныеПользователи.TabularSection.ПраваДоступа.Attribute.ПравоДоступа" id="84dab77b-f9c9-4052-ba93-11f2139abbad"/>
+			<Metadata name="Catalog.google_auth_СервисныеПользователи.Attribute.private_key" id="8a929bb3-d9c7-4653-bfe5-e94a900832db"/>
+			<Metadata name="Catalog.google_auth_СервисныеПользователи.Attribute.project_id" id="9b3c03fc-17bd-4ea6-8182-4ec8303ee392"/>
+			<Metadata name="Catalog.google_auth_СервисныеПользователи.Attribute.private_key_id" id="bce495ff-504c-4b54-a77d-d512c7a2a860"/>
+			<Metadata name="Catalog.google_auth_СервисныеПользователи.Attribute.public_key" id="f7b69c77-92b2-43e4-9288-3e525223c242"/>
 		</Metadata>
-		<Metadata name="Catalog.auth_g_СервисныеПользователи.Form.ФормаСписка" id="41f05437-39e3-4114-a97f-267c50d15081" configVersion="8c06d682b94f814656260e621594022345a6992f"/>
-		<Metadata name="Catalog.auth_g_СервисныеПользователи.Form.ФормаСписка.Form" id="41f05437-39e3-4114-a97f-267c50d15081.0" configVersion="bdcd98432cbb227d57d3189f7435def4e85f3136"/>
-		<Metadata name="Catalog.auth_g_СервисныеПользователи.Form.ФормаЭлемента" id="fa8d8247-2d0c-40ef-a980-5bbd7210b669" configVersion="e4fad40cdf6d6ecf0ae31f3f8911db136544d014"/>
-		<Metadata name="Catalog.auth_g_СервисныеПользователи.Form.ФормаЭлемента.Form" id="fa8d8247-2d0c-40ef-a980-5bbd7210b669.0" configVersion="996d4ff0bbd5c0a135e5cf481bd9ce900208f662"/>
-		<Metadata name="CommonModule.auth_g_РаботаСоСтроками" id="0446cd6f-16a7-4035-8183-24fd65802c90" configVersion="17a6e28aabe3cdd674959d8d2fd6aafc88d2c3c6"/>
-		<Metadata name="CommonModule.auth_g_РаботаСоСтроками.Module" id="0446cd6f-16a7-4035-8183-24fd65802c90.0" configVersion="32dc4112e1f097ac3b8a69dfd1428d63beebd41c"/>
-		<Metadata name="CommonModule.auth_g_Сервер" id="768f22a7-6afd-4b3b-ae59-19418ec6c3ae" configVersion="a52321840c435713b935c0615ce443d5c5ddef31"/>
-		<Metadata name="CommonModule.auth_g_Сервер.Module" id="768f22a7-6afd-4b3b-ae59-19418ec6c3ae.0" configVersion="a6a6724a7fb35be11eefdbfcd726be43b6c97994"/>
+		<Metadata name="Catalog.google_auth_СервисныеПользователи.Form.ФормаСписка" id="41f05437-39e3-4114-a97f-267c50d15081" configVersion="8c06d682b94f814656260e621594022345a6992f"/>
+		<Metadata name="Catalog.google_auth_СервисныеПользователи.Form.ФормаСписка.Form" id="41f05437-39e3-4114-a97f-267c50d15081.0" configVersion="bdcd98432cbb227d57d3189f7435def4e85f3136"/>
+		<Metadata name="Catalog.google_auth_СервисныеПользователи.Form.ФормаЭлемента" id="fa8d8247-2d0c-40ef-a980-5bbd7210b669" configVersion="e4fad40cdf6d6ecf0ae31f3f8911db136544d014"/>
+		<Metadata name="Catalog.google_auth_СервисныеПользователи.Form.ФормаЭлемента.Form" id="fa8d8247-2d0c-40ef-a980-5bbd7210b669.0" configVersion="ae23a40e5b6e50f4a67382fa14a20a0628f30449"/>
+		<Metadata name="CommonModule.google_auth_Сервер" id="768f22a7-6afd-4b3b-ae59-19418ec6c3ae" configVersion="b9bccb1d89d44d3e17d65b5e1508785002a42c43"/>
+		<Metadata name="CommonModule.google_auth_Сервер.Module" id="768f22a7-6afd-4b3b-ae59-19418ec6c3ae.0" configVersion="5e9e79bf6f749406d32fc1306a13390680c9fe67"/>
+		<Metadata name="CommonModule.google_РаботаСоСтроками" id="0446cd6f-16a7-4035-8183-24fd65802c90" configVersion="28b7b59f98e5bd0740119b381e96e927b945a2f4"/>
+		<Metadata name="CommonModule.google_РаботаСоСтроками.Module" id="0446cd6f-16a7-4035-8183-24fd65802c90.0" configVersion="32dc4112e1f097ac3b8a69dfd1428d63beebd41c"/>
 		<Metadata name="CommonModule.КоннекторHTTP" id="486c648a-94b2-4c34-aa63-5d12bd3711be" configVersion="e04bb63e0c436be5116419d73efb55ccc9bcab28"/>
 		<Metadata name="CommonModule.КоннекторHTTP.Module" id="486c648a-94b2-4c34-aa63-5d12bd3711be.0" configVersion="c0aceb7dc6ac9d1251bb84e9c8dd64f3486356c4"/>
-		<Metadata name="Configuration.GoogleAPI" id="1a6fee01-2178-4c78-ac22-c91ecf215a2f" configVersion="a978a0fcb0237c00f6d56aa0be1ba9ec5a533236"/>
-		<Metadata name="InformationRegister.auth_g_Токены" id="60d1259f-dc4d-4eef-bca1-88f62d8eddee" configVersion="51a705f4f2031c00a3b9d1bd12711b16fd1279e0">
-			<Metadata name="InformationRegister.auth_g_Токены.Resource.Токен" id="48953004-3bf3-4444-a011-26c870c0bc8a"/>
-			<Metadata name="InformationRegister.auth_g_Токены.Resource.ДатаИстечения" id="72f8bc30-c327-4bb3-93ca-f58ac2a48c6b"/>
-			<Metadata name="InformationRegister.auth_g_Токены.Dimension.СервисныйПользователь" id="a6586644-9e0d-4dc4-bbfa-1311009b73fe"/>
-			<Metadata name="InformationRegister.auth_g_Токены.Resource.ПраваДоступа" id="ac30a53a-cee2-4046-98df-308d96976972"/>
+		<Metadata name="CommonPicture.google_icon_16_16" id="93679c4f-0d00-4b5b-9a5e-dab7fa3d0e54" configVersion="02049d236ff3a8719c620fe633ce7f7f06ad5ca2"/>
+		<Metadata name="CommonPicture.google_icon_16_16.Picture" id="93679c4f-0d00-4b5b-9a5e-dab7fa3d0e54.0" configVersion="b761df90c9dfa0ba5fb6161979432daf03cf00e9"/>
+		<Metadata name="Configuration.GoogleAPI" id="1a6fee01-2178-4c78-ac22-c91ecf215a2f" configVersion="83b45e1559741cb2a47d8df2a21179b0fce52206"/>
+		<Metadata name="InformationRegister.google_auth_Токены" id="60d1259f-dc4d-4eef-bca1-88f62d8eddee" configVersion="1959231b4d8570fd8a95ffb2d98b9fe998d6668a">
+			<Metadata name="InformationRegister.google_auth_Токены.Resource.Токен" id="48953004-3bf3-4444-a011-26c870c0bc8a"/>
+			<Metadata name="InformationRegister.google_auth_Токены.Resource.ДатаИстечения" id="72f8bc30-c327-4bb3-93ca-f58ac2a48c6b"/>
+			<Metadata name="InformationRegister.google_auth_Токены.Dimension.СервисныйПользователь" id="a6586644-9e0d-4dc4-bbfa-1311009b73fe"/>
+			<Metadata name="InformationRegister.google_auth_Токены.Resource.ПраваДоступа" id="ac30a53a-cee2-4046-98df-308d96976972"/>
 		</Metadata>
-		<Metadata name="Language.Русский" id="f7013a29-5bc3-4668-99b1-e7722ecbce96" configVersion="afe8411416e164a9945905d703906623c3cb11e8"/>
+		<Metadata name="Language.Русский" id="f7013a29-5bc3-4668-99b1-e7722ecbce96" configVersion="ddbe6c72f8b5be7878420e5feb7a085c95e5b239"/>
 		<Metadata name="Role.google_ОсновнаяРоль" id="b0e07bc4-08c3-47cc-bcd2-250154975476" configVersion="779d8d5360bb8601137f33059c39488bef6ea85c"/>
-		<Metadata name="Subsystem.Администрирование" id="4c09387a-a32b-442a-9a11-cb826c427021" configVersion="90a3d5fcc4b40e9f5f8e84db13245d5b57c7a0b2"/>
+		<Metadata name="Subsystem.Google_API" id="5aab9435-e9d7-4523-b3e2-7b0c5f544284" configVersion="3770420829f2707717f5f56be0a62ac4515e9d53"/>
+		<Metadata name="Subsystem.Google_API.Subsystem.Google_Аутентификация" id="617be4e6-6647-440a-a231-c64b2e43cb38" configVersion="e5c4e57407fb96540a22b9ce71c9564fc0143748"/>
 	</ConfigVersions>
 </ConfigDumpInfo>

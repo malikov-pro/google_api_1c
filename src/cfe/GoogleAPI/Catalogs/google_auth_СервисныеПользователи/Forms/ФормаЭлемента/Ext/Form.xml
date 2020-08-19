@@ -228,7 +228,7 @@
 	<Attributes>
 		<Attribute name="Объект" id="1">
 			<Type>
-				<v8:Type>cfg:CatalogObject.auth_g_СервисныеПользователи</v8:Type>
+				<v8:Type>cfg:CatalogObject.google_auth_СервисныеПользователи</v8:Type>
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<SavedData>true</SavedData>

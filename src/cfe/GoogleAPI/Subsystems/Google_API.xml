@@ -1,23 +1,31 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
-	<CommonModule uuid="0446cd6f-16a7-4035-8183-24fd65802c90">
+	<Subsystem uuid="5aab9435-e9d7-4523-b3e2-7b0c5f544284">
 		<Properties>
-			<Name>auth_g_РаботаСоСтроками</Name>
+			<Name>Google_API</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Auth g работа со строками</v8:content>
+					<v8:content>Google API</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<Global>false</Global>
-			<ClientManagedApplication>true</ClientManagedApplication>
-			<Server>true</Server>
-			<ExternalConnection>false</ExternalConnection>
-			<ClientOrdinaryApplication>false</ClientOrdinaryApplication>
-			<ServerCall>false</ServerCall>
-			<Privileged>false</Privileged>
-			<ReturnValuesReuse>DontUse</ReturnValuesReuse>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture>
+				<xr:Ref>CommonPicture.google_icon_16_16</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КоннекторHTTP</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.google_ОсновнаяРоль</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.google_icon_16_16</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.google_РаботаСоСтроками</xr:Item>
+			</Content>
 		</Properties>
-	</CommonModule>
+		<ChildObjects>
+			<Subsystem>Google_Аутентификация</Subsystem>
+		</ChildObjects>
+	</Subsystem>
 </MetaDataObject>
