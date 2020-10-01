@@ -1,9 +1,9 @@
 function doGet(e) {
   const templateDocId = e.parameter.templateDocId;
-  if(templateDocId == NaN || String(templateDocId) == "") {
+  if (templateDocId == NaN || String(templateDocId) == "") {
     return createResponse(400, "Bad templateDocId");
   }
-  
+
   return createResponse(200, getDocumentStructure(templateDocId));
 }
 
@@ -22,42 +22,80 @@ function doPost(e) {
     docNew = createDocFromTemplate(
       contents.templateDocId,
       contents.folderId,
+      contents.title,
       contents.replacements
     );
   } else if (type == "mergeDocFromTemplate") {
     docNew = mergeDocFromTemplate(
       contents.templateDocId,
       contents.folderId,
-      contents.mergeParameters
+      contents.mergeParameters,
+      contents.mergeParametersHeader,
+      contents.mergeParametersFooter
     );
   } else {
     return createResponse(400, "Bad type format", responseType);
   }
 
+  docNewId = docNew.getId();
+
   if (responseDocType == "PDF") {
+    docNew = DocumentApp.openById(docNewId);
     response = docToBase64PDF(docNew);
   } else {
-    response = docNew.getId();
+    response = docNewId;
   }
 
   return createResponse(200, response, responseType);
 }
 
-function createDocFromTemplate(templateDocId, FolderId, arrReplacements) {
-  let docNew = makeCopyDocFileFromTemplate(templateDocId, FolderId);
+function createDocFromTemplate(
+  templateDocId,
+  FolderId,
+  title,
+  arrReplacements
+) {
+  let docNew = makeCopyDocFileFromTemplate(templateDocId, FolderId, title);
 
   replacesInElement(docNew.getBody(), arrReplacements);
 
   return docNew;
 }
 
-function mergeDocFromTemplate(templateDocId, FolderId, arrMergeParameters) {
+function mergeDocFromTemplate(
+  templateDocId,
+  FolderId,
+  arrMergeParameters,
+  arrMergeParametersHeader,
+  arrMergeParametersFooter
+) {
   let docNew = createDocFileFromTemplate(templateDocId, FolderId);
+  let templateDoc = DocumentApp.openById(templateDocId);
+
+  newDocumentBody = docNew.getBody();
+  templateDocBody = templateDoc.getBody();
+
+  newDocumentBody.setMarginBottom(templateDocBody.getMarginBottom());
+  newDocumentBody.setMarginLeft(templateDocBody.getMarginLeft());
+  newDocumentBody.setMarginRight(templateDocBody.getMarginRight());
+  newDocumentBody.setMarginTop(templateDocBody.getMarginTop());
 
   mergeElementsFromTemplate(
-    docNew.getBody(),
-    DocumentApp.openById(templateDocId).getBody(),
+    newDocumentBody,
+    templateDocBody,
     arrMergeParameters
+  );
+
+  mergeElementsFromTemplate(
+    docNew.addHeader(),
+    templateDoc.getHeader(),
+    arrMergeParametersHeader
+  );
+
+  mergeElementsFromTemplate(
+    docNew.addFooter(),
+    templateDoc.getFooter(),
+    arrMergeParametersFooter
   );
 
   return docNew;
@@ -158,17 +196,27 @@ function replaceTextToImageInElement(
 }
 
 function getDocumentStructure(docId) {
-  var body = DocumentApp.openById(docId).getBody();
+  let response = [];
 
-  response = [];
+  addElementsToResponse(DocumentApp.openById(docId).getBody(), response);
+  addElementsToResponse(DocumentApp.openById(docId).getHeader(), response);
+  addElementsToResponse(DocumentApp.openById(docId).getFooter(), response);
 
-  var elements = body.getNumChildren();
+  return response;
+}
+
+function addElementsToResponse(body, response) {
+  if (body == null) {
+    return;
+  }
+
+  let elements = body.getNumChildren();
 
   for (var i = 0; i < elements; i++) {
-    var element = body.getChild(i);
-    var text = element.getText();
+    let element = body.getChild(i);
+    let text = element.getText();
 
-    var pattern = /\{(|\/)v8 (.+?)\}/gm;
+    let pattern = /\{(|\/)v8 (.+?)\}/gm;
 
     response.push({
       index: i,
@@ -176,8 +224,6 @@ function getDocumentStructure(docId) {
       type: element.getType(),
     });
   }
-
-  return response;
 }
 
 function createDocFileFromTemplate(templateFileId, folderId) {
@@ -190,9 +236,14 @@ function createDocFileFromTemplate(templateFileId, folderId) {
   return document;
 }
 
-function makeCopyDocFileFromTemplate(templateFileId, folderId) {
+function makeCopyDocFileFromTemplate(templateFileId, folderId, title) {
   const templateFile = DriveApp.getFileById(templateFileId);
-  file = templateFile.makeCopy(createFileName(templateFile));
+
+  if (title == "") {
+    titlecreateFileName(templateFile);
+  }
+
+  file = templateFile.makeCopy(title);
 
   moveFileToFolder(file.getId(), folderId);
 
@@ -210,8 +261,9 @@ function createFileName(templateFile) {
 }
 
 function moveFileToFolder(fileId, folderId) {
-  if (folderId == NaN || String(folderId) === "" || String(fileId) === "") return;
-  
+  if (folderId == NaN || String(folderId) === "" || String(fileId) === "")
+    return;
+
   var file = DriveApp.getFileById(fileId);
   folder = DriveApp.getFolderById(folderId).addFile(file);
   file.getParents().next().removeFile(file);
